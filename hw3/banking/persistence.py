@@ -3,6 +3,7 @@ class Bank:
         self.accounts = {}
 
     def create_account(self, account_type, owner_name, initial_balance=0.0):
+        accountExists = True
         self.account_type = account_type
         self.owner_name = owner_name
         self.initial_balance = initial_balance
