@@ -33,4 +33,3 @@ class Bank:
                     self.accounts[key] = db.get(key)
         except FileNotFoundError:
             self.accounts = {}
-            print("File not found, account dictionary will be empty")
