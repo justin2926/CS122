@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<ul>
+    {% for message in messages %}
+    <li>
+        <strong>{{ message.text }}</strong>
+    </li>
+    {% else %}
+        <li>No posts yet.</li>
+    {% endfor %}
+
+</ul>
+
+<a href="{{ url_for('home_page') }}">Go Home</a>
