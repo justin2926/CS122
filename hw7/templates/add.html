@@ -1,0 +1,7 @@
+<!doctype html>
+<form action="{{ url_for('add_page') }}" method="post" style="display:inline">
+  <input name="text" placeholder="Message" value="{{ post.message if post }}">
+  <button type="submit">Save</button>
+</form>
+<br>
+<a href="{{ url_for('home_page') }}">Go Home</a>
